@@ -1,0 +1,108 @@
+name: Report a Problem
+description: Let us know if something is not working as expected on the site.
+labels:
+  - bug
+body:
+  - type: checkboxes
+    id: account-type
+    attributes:
+      label: Who were you signed in as?
+      description: Select all that apply.
+      options: 
+        - label: "[Admin] Administrator"
+        - label: "[School] School Owner"
+        - label: "[School] School Administrator"
+        - label: "[School] Teacher"
+        - label: "[School] Student"
+        - label: "[Independent Educator] Teacher"
+        - label: "[Independent Educator] Student"
+        - label: "[Family] Guardian"
+        - label: "[Family] Child"
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where did the problem happen?
+      description: "Select the page or feature where you noticed the issue."
+      options:
+        - "Admin Dashboard: Manage Books"
+        - "Admin Dashboard: Manage Subscription"
+        - "Admin: Dashboard"
+        - "Admin: Blog"
+        - "School: School"
+        - "Books: Books"
+        - "Resources: Resources"
+        - "Resources: Help"
+        - "Resources: Blog"
+        - "Profile: Profile Management"
+        - "Authentication: Login"
+        - "Authentication: Account Setup"
+        - "Platform: Feedback"
+        - "System: Subscription"
+        - "System: Email"
+        - "System: Server"
+    validations:
+      required: true
+  - type: dropdown
+    id: feature
+    attributes:
+      label: Which feature were you using?
+      description: Select the feature you were using when the problem occurred.
+      options:
+        - Payment
+        - Books Preview
+        - Books Editing
+        - PDF Viewing
+        - Activity Editing
+        - Classroom Management
+        - Teacher Management
+        - Student Management
+        - Account Activation
+        - Links
+        - Welcome Page
+        - Catalog
+        - Default Page
+        - All Pages
+        - Page Tour
+        - Accessibility / WCAG Compliance
+        - Customization
+        - Registration
+        - Mobile Experience
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Briefly describe the problem you experienced.
+      placeholder: "Example: I clicked one of the preview books, but nothing happened."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What was the expected result?
+      description: Briefly describe what should have happened.
+      placeholder: "Example: After clicking, it should link me to another tab."
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context (optional)
+      placeholder: "Add any other context, screenshots, or videos."
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority"
+      options:
+        - "High"
+        - "Medium"
+        - "Low"
+  - type: dropdown
+    id: assign
+    attributes:
+      label: "Would you like to work on this issue?"
+      options:
+        - "No"
+        - "Yes"

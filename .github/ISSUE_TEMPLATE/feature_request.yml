@@ -19,3 +19,25 @@ body:
       placeholder: "Students could quickly return to books they are reading without searching for them again."
     validations:
       required: true
+  - type: checkboxes
+    id: location
+    attributes:
+      label: Where would you like to see this feature?
+      description: Select all pages or features where this improvement would be useful.
+      options: 
+        - label: "Admin Dashboard: Manage Books"
+        - label: "Admin Dashboard: Manage Subscription"
+        - label: "Admin: Dashboard"
+        - label: "Admin: Blog"
+        - label: "School: School"
+        - label: "Books: Books"
+        - label: "Resources: Resources"
+        - label: "Resources: Help"
+        - label: "Resources: Blog"
+        - label: "Profile: Profile Management"
+        - label: "Authentication: Login"
+        - label: "Authentication: Account Setup"
+        - label: "Platform: Feedback"
+        - label: "System: Subscription"
+        - label: "System: Email"
+        - label: "System: Server"

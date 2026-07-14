@@ -1,0 +1,50 @@
+name: Request a Feature
+description: Suggest or request a new feature that solves a problem on the site.
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What would you like to improve?
+      description: Briefly describe the idea or improvement you would like to see.
+      placeholder: "Example: I would like users to be able to bookmark books so they can easily find them later."
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why would this be helpful?
+      description: Explain how this would make Ri2L easier or better to use.
+      placeholder: "Example: Students could quickly return to books they are reading without searching for them again."
+    validations:
+      required: true
+  - type: checkboxes
+    id: location
+    attributes:
+      label: Where would you like to see this feature?
+      description: Select all pages or features where this improvement would be useful.
+      options: 
+        - label: "Admin Dashboard: Manage Books"
+        - label: "Admin Dashboard: Manage Subscription"
+        - label: "Admin: Dashboard"
+        - label: "Admin: Blog"
+        - label: "School: School"
+        - label: "Books: Books"
+        - label: "Resources: Resources"
+        - label: "Resources: Help"
+        - label: "Resources: Blog"
+        - label: "Profile: Profile Management"
+        - label: "Authentication: Login"
+        - label: "Authentication: Account Setup"
+        - label: "Platform: Feedback"
+        - label: "System: Subscription"
+        - label: "System: Email"
+        - label: "System: Server"
+        - label: "Other"
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Anything else you'd like us to know? (Optional)
+      description: You can include screenshots, examples, sketches, or links that help explain your idea.
+      placeholder: "Example: I found another website that has a similar feature, or here's a sketch of what I had in mind."

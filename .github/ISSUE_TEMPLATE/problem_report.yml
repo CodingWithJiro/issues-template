@@ -89,7 +89,7 @@ body:
   - type: textarea
     id: additional-context
     attributes:
-      label: Additional context (optional)
+      label: Additional context (Optional)
       placeholder: "Add any other context, screenshots, or videos."
   - type: dropdown
     id: priority

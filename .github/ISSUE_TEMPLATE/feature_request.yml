@@ -41,6 +41,7 @@ body:
         - label: "System: Subscription"
         - label: "System: Email"
         - label: "System: Server"
+        - label: "Other"
   - type: textarea
     id: additional-information
     attributes:

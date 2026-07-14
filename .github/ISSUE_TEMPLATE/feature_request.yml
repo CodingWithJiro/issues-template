@@ -1,0 +1,13 @@
+name: Request a Feature
+description: Suggest or request a new feature that solves a problem on the site.
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What would you like to improve?
+      description: Briefly describe the idea or improvement you would like to see.
+      placeholder: I would like users to be able to bookmark books.
+    validations:
+      required: true

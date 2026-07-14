@@ -8,6 +8,14 @@ body:
     attributes:
       label: What would you like to improve?
       description: Briefly describe the idea or improvement you would like to see.
-      placeholder: I would like users to be able to bookmark books.
+      placeholder: I would like users to be able to bookmark books so they can easily find them later.
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why would this be helpful?
+      description: "Explain how this would make Ri2L easier or better to use."
+      placeholder: "Students could quickly return to books they are reading without searching for them again."
     validations:
       required: true

@@ -1,1 +1,1 @@
-# Issues & Pull Request Template Practice Repo
+# Issues & Pull Request Template

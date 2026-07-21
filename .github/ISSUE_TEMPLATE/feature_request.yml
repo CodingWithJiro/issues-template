@@ -19,32 +19,17 @@ body:
       placeholder: "Example: Students could quickly return to books they are reading without searching for them again."
     validations:
       required: true
-  - type: checkboxes
+  - type: textarea
     id: location
     attributes:
       label: Where would you like to see this feature?
-      description: Select all pages or features where this improvement would be useful.
-      options: 
-        - label: "Admin Dashboard: Manage Books"
-        - label: "Admin Dashboard: Manage Subscription"
-        - label: "Admin: Dashboard"
-        - label: "Admin: Blog"
-        - label: "School: School"
-        - label: "Books: Books"
-        - label: "Resources: Resources"
-        - label: "Resources: Help"
-        - label: "Resources: Blog"
-        - label: "Profile: Profile Management"
-        - label: "Authentication: Login"
-        - label: "Authentication: Account Setup"
-        - label: "Platform: Feedback"
-        - label: "System: Subscription"
-        - label: "System: Email"
-        - label: "System: Server"
-        - label: "Other"
+      description: Briefly state the location where you want to add the improvement.
+      placeholder: |
+        [Account Type] - [User Type] - [Affected Page] - [Specific Feature]
+        Example: School - Student - Books - Bookmark
   - type: textarea
     id: additional-information
     attributes:
       label: Anything else you'd like us to know? (Optional)
       description: You can include screenshots, examples, sketches, or links that help explain your idea.
-      placeholder: "Example: I found another website that has a similar feature, or here's a sketch of what I had in mind."
+      placeholder: "Example: I found another website that has a similar feature. Here's a sketch of what I had in mind."

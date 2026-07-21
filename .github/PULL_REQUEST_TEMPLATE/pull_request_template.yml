@@ -1,0 +1,53 @@
+name: Pull Request
+description: Submit your changes for review.
+title:
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the changes made in this pull request.
+      placeholder: Fixed accessibility issues in homepage.
+    validations:
+      required: true
+  - type: textarea
+    id: changes
+    attributes:
+      label: Changes
+      description: List down changes you made.
+      placeholder: |
+        - Added underline to CALEC footer link.
+        - Made button colors WCAG-compliant.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / Demo
+      description: Include screenshots or demo if applicable if your changes affect the user interface.
+      placeholder: Drag and drop images here or paste them into this field. Type N/A if none.
+  - type: input
+    id: related-issue
+    attributes:
+      label: Related Issue
+      description: Link the related issue number if applicable. Type N/A if none.
+      placeholder: "Closes issue #67"
+  - type: checkboxes
+    id: testing
+    attributes:
+      label: Testing
+      description: Select all that apply.
+      options:
+        - label: Tested locally
+        - label: Added or updated tests
+        - label: Verified accessibility
+        - label: Documentation updated
+        - label: Not applicable
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes for Reviewers
+      description: Anything specific or additional notes the reviewer should be made aware of.
+      placeholder: |
+        - Please check if the button colors are good to go.
+        - Third-party accessibility issues cannot be resolved.
